@@ -1,6 +1,6 @@
 # haskell-misc
 
-[![Build Status](https://travis-ci.org/czchen/haskell-gosper.svg?branch=master)](https://travis-ci.org/czchen/haskell-gosper)
+[![Build Status](https://travis-ci.org/czchen/haskell-misc.svg?branch=master)](https://travis-ci.org/czchen/haskell-misc)
 
 This project is a playground of [Haskell](https://www.haskell.org/haskellwiki/Haskell).
 
