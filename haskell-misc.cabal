@@ -15,7 +15,8 @@ library
   default-language:    Haskell2010
   default-extensions:  ParallelListComp
   hs-source-dirs:      src
-  exposed-modules:     Fibonacci
+  exposed-modules:     BinarySearchTree
+                 ,     Fibonacci
                  ,     Gosper
   build-depends:       base >=4.6 && <4.7
 
