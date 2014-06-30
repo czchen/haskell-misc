@@ -1,8 +1,8 @@
-module BinarySearchSpec where
+module BinarySearchTreeSpec where
 
 import Test.Hspec
 
-import BinarySearch
+import BinarySearchTree
 
 spec :: Spec
 spec = do
