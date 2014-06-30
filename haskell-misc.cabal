@@ -17,7 +17,6 @@ library
   hs-source-dirs:      src
   exposed-modules:     BinarySearchTree
                  ,     Fibonacci
-                 ,     Gosper
   build-depends:       base >=4.6 && <4.7
 
 test-suite spec
