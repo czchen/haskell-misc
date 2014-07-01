@@ -2,6 +2,7 @@ language: haskell
 ghc: 7.8
 
 install:
+    - cabal install --only-dependencies --enable-tests
     - cabal install hpc-coveralls
 
 script:
