@@ -17,13 +17,13 @@ library
   hs-source-dirs:      src
   exposed-modules:     BinarySearchTree
                  ,     Fibonacci
-  build-depends:       base >=4.6 && <4.7
+  build-depends:       base >=4.6
 
 test-suite spec
   default-language:    Haskell2010
   type:                exitcode-stdio-1.0
   hs-source-dirs:      tests
   main-is:             Spec.hs
-  build-depends:       base >=4.6 && <4.7
+  build-depends:       base >=4.6
                ,       hspec >= 1.3
                ,       haskell-misc
