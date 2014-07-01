@@ -9,15 +9,24 @@ spec = do
 
   describe "BinarySearch" $ do
 
-    describe "1, 2, 3 in tree" $ do
+    describe "insert 10, 10, 9, 11" $ do
 
-      let tree = treeInsert 3 (treeInsert 2 (treeInsert 1 emptyTree))
+      let tree = treeInsert 11 $ treeInsert 9 $ treeInsert 10 $ treeInsert 10 emptyTree
 
-      it "treeElem 0 tree" $ do
-        (treeElem 0 tree) `shouldBe` False
+      it "treeElem 8 tree" $ do
+        (treeElem 8 tree) `shouldBe` False
 
-      it "treeElem 1 tree" $ do
-        (treeElem 1 tree) `shouldBe` True
+      it "treeElem 9 tree" $ do
+        (treeElem 9 tree) `shouldBe` True
+
+      it "treeElem 10 tree" $ do
+        (treeElem 10 tree) `shouldBe` True
+
+      it "treeElem 11 tree" $ do
+        (treeElem 11 tree) `shouldBe` True
+
+      it "treeElem 12 tree" $ do
+        (treeElem 12 tree) `shouldBe` False
 
 main :: IO()
 main = do
