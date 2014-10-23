@@ -17,6 +17,7 @@ library
   hs-source-dirs:      src
   exposed-modules:     BinarySearchTree
                  ,     Fibonacci
+                 ,     ListComprehension
   build-depends:       base >=4.6
 
 test-suite spec
