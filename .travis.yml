@@ -6,7 +6,7 @@ install:
     - cabal install hpc-coveralls
 
 script:
-    - cabal configure --enable-tests --enable-library-coverage
+    - cabal configure --enable-tests --enable-coverage
     - cabal build
     - cabal test
 
