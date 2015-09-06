@@ -1,3 +1,5 @@
+ {-# LANGUAGE UnicodeSyntax #-}
+
 module BinarySearchTree
 ( Tree
 , emptyTree
@@ -11,14 +13,14 @@ data Tree a = EmptyTree
 
 emptyTree = EmptyTree
 
-treeInsert :: (Ord a) => a -> Tree a -> Tree a
+treeInsert :: (Ord a) ⇒ a → Tree a → Tree a
 treeInsert x EmptyTree = Node x emptyTree emptyTree
 treeInsert x (Node y left right)
   | x == y = Node y left right
   | x < y  = Node y (treeInsert x left) right
   | x > y  = Node y left (treeInsert x right)
 
-treeElem :: (Ord a) => a -> Tree a -> Bool
+treeElem :: (Ord a) ⇒ a → Tree a → Bool
 treeElem x EmptyTree = False
 treeElem x (Node y left right)
   | x == y = True
