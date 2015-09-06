@@ -1,6 +1,8 @@
 language: haskell
 ghc: 7.8
 
+sudo: false
+
 install:
     - cabal install --only-dependencies --enable-tests
     - cabal install --force-reinstalls hpc-coveralls
